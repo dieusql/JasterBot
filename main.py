@@ -34,4 +34,6 @@ async def bakiye(interaction: discord.Interaction):
     conn.close()
 
 # Token'ını buraya gir!
-bot.run("MTUyMDcxMzM5NjIyMjMwMDI0MA.GiM0Ac.5yFKe4kW8Ef2l-rD6LDxYbcSL5iuhG47mTD6d4")
+token = os.environ.get('MTUyMDcxMzM5NjIyMjMwMDI0MA.GiM0Ac.5yFKe4kW8Ef2l-rD6LDxYbcSL5iuhG47mTD6d4')
+if __name__ == "__main__":
+    bot.run(token)
